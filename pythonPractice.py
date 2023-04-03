@@ -222,3 +222,47 @@
 #         print("You Lose!")
 #     else:
 #         print("Draw")
+
+# #Day 5 - Loops
+
+# #Highscore
+# student_scores = input("Input a list of student scores ").split()
+# highscore = 0
+# for n in range(0, len(student_scores)):
+#   student_scores[n] = int(student_scores[n])
+#   if highscore < int(student_scores[n]):
+#     highscore = int(student_scores[n])
+# print(student_scores)
+# print(f"The highest score in the class is: {highscore}")
+
+#FizzBuzz
+# for i in range (1, 100):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz")
+#     elif i % 3 == 0:
+#         print("Fizz")
+#     elif i % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(i)
+
+# #RandomPwdGenerator
+# import random
+# letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+# numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+# symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+# print("Welcome to the PyPassword Generator!")
+# nr_letters= int(input("How many letters would you like in your password?\n")) 
+# nr_symbols = int(input(f"How many symbols would you like?\n"))
+# nr_numbers = int(input(f"How many numbers would you like?\n"))
+# pwd = ""
+# for i in range(0,nr_letters):
+#     pwd += random.choice(letters)
+# for i in range(0,nr_symbols):
+#     pwd += random.choice(symbols)
+# for i in range(0,nr_numbers):
+#     pwd += random.choice(numbers)
+# pwd = [i for i in pwd]
+# random.shuffle(pwd)
+# print("".join(pwd))
